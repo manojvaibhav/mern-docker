@@ -1,0 +1,15 @@
+.login-col {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .login{
+        padding:20px;
+        // background-color: #C5CBE3;
+        background-color: rgba(197,203,227,0.3);
+        border-radius: 4px;
+    }
+}
+.m-t-20 {
+    margin-top:20px;
+}
