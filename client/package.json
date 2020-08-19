@@ -15,8 +15,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3"
   },
-  "proxy":"http://api:4000/",
-  "secure":false,
+  "proxy": "http://api:4000/",
+  "secure": false,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

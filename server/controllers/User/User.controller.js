@@ -4,7 +4,7 @@ const _ = require('lodash');
 UserController = {};
 
 UserController.loginUser = (req, res, next) => {
-console.log(req.body);
+console.log("Someone user logging in", req.body);
   const body = req.body;
   if (!req.body || !body.email || !body.password) {
     return res
