@@ -3,7 +3,11 @@ const config = require('../env');
 const chalk = require('chalk');
 
 module.exports = () => {
-    mongoose.connect(`mongodb://${config.mongo.dbHost}/${config.mongo.dbName}`, { useNewUrlParser: true});
+
+    console.log(config);
+
+    mongoose.connect(`mongodb://${config.mongo.dbHost}:${config.mongo.dbPort}/${config.mongo.dbName}`, { useNewUrlParser: true});
+    
 
     mongoose.connection.on('connected', ()=>{
         console.log("Mongoose connection successful !");
